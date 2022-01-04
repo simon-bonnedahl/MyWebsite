@@ -1,0 +1,53 @@
+<html>
+<body>
+    <head>
+<link rel="stylesheet" href="../style.css">
+<script>src="contactForm.js"</script>
+</head>
+<section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!">Simon Bonnedahl</a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="#!">Home</a>
+          </li>
+          <li>
+            <a href="#!">About Me</a>
+          </li>
+          <li>
+          <li>
+            <a href="#!">Portfolio</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <section class="get-in-touch">
+    <h1 class="title">Contact Me</h1>
+    <form class="contact-form row" method ="post" action="contactFormHandler.php">
+       <div class="form-field col x-50">
+          <input id="name" class="input-text js-input" type="text" required>
+          <label class="label" for="name">Name</label>
+       </div>
+       <div class="form-field col x-50">
+          <input id="email" class="input-text js-input" type="email" required>
+          <label class="label" for="email">E-mail</label>
+       </div>
+       <div class="form-field col x-100">
+          <input id="message" class="input-text js-input" type="text" required>
+          <label class="label" for="message">Message</label>
+       </div>
+       <div class="form-field col x-100 align-center">
+          <input class="submit-btn" type="submit" value="Send">
+       </div>
+    </form>
+ </section>
+</body>
+</html>
