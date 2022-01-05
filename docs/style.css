@@ -6,9 +6,11 @@
 body{
     background: #2b5876;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4e4376, #2b5876, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4e4376, #2b5876, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 500%;
-    animation: movingBackground 16s linear infinite;
+   /* background: linear-gradient(to right, #4e4376, #2b5876, #4e4376, #2b5876);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, gray, #166d3b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #262626, #14557b, #33645e , #14557b,  #262626); /* W3C, IE 10+*/
+    background-size: 300% 300%;
+    animation: movingBackground 25s ease infinite;
 }
 .brand {
   position: absolute;
@@ -50,7 +52,8 @@ nav ul li a:visited {
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #2581DC;
+  background: #14557b;
+  opacity: 0.9;
   color: #ffffff;
 }
 nav ul li a:not(:only-child):after,
@@ -293,4 +296,11 @@ article {
   }
   .note .link:hover {
     text-decoration: underline;
+  }
+
+  #header{
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 300px;
   }
