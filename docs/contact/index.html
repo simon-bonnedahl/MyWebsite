@@ -1,7 +1,6 @@
 <html>
 <body>
 <link rel="stylesheet" href="../style.css">
-<script>src="contactForm.js"</script>
 <section class="navigation">
     <div class="nav-container">
       <div class="brand">
@@ -11,7 +10,7 @@
         <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
         <ul class="nav-list">
           <li>
-            <a href="#!">Home</a>
+            <a href="../index.html">Home</a>
           </li>
           <li>
             <a href="#!">About Me</a>
@@ -31,7 +30,7 @@
     <h1 class="title">Contact Me</h1>
     <form class="contact-form row" method ="POST" action="contactFormHandler.php">
        <div class="form-field col x-50">
-          <input id="name" name="name" class="input-text js-input" type="text" required>
+          <input id="name" name="name" class="input-text js-input" stype="text" required>
           <label class="label" for="name">Name</label>
        </div>
        <div class="form-field col x-50">
@@ -47,5 +46,6 @@
        </div>
     </form>
  </section>
+ <script src="contactForm.js"></script>
 </body>
 </html>
