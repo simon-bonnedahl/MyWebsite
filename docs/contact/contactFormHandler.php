@@ -3,21 +3,21 @@
     $visitor_email = $_POST['email'];
     $message = $_POST['message'];
 
-    $email_from ='simon2.bonnedahl@gmail.com';
+    $email_from ='contact@simonbonnedahl.dev';
 
     $email_subject = "Contact Form Submission";
 
-    $email_body = "User Name:   $name.\n".
-                  "User Email: $visitor_email.\n".
-                  "User Message: $message.\n".
+                  
+    $to = "contact@simonbonnedahl.dev";
+
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
     
-    $to = "simon.bonnedahl@gmail.com";
+    $headers .= 'From: ' . $name . "\r\n";
+    $headers .= 'Reply-To: ' .$visitor_email . "\r\n";
+    //$headers .= 'X-Mailer: PHP/' . phpversion();
 
-    $headers = "From: $email_from \r\n";
-
-    $headers .= "Reply: $visitor_email \r\n";
-
-    mail($to,$email_subject,$email_body,$headers);
-
-    header("Location: contact.html");
+    mail($to,$email_subject,$message,$headers);
+    
+    header("location: .");
 ?>
