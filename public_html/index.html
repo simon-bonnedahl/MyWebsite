@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<!--This website is inspired by and based on Matthew Williams website findmatthew.com-->
+
+<html>
+  <head>
+    <title>simonbonnedahl</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+
+    <!-- HOSTED -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <!-- LOCAL -->
+    <script src="scripts/index.js"></script>
+  </head>
+  <body>
+    <div class="overflow-wrap">
+      <!-- HOME -->
+      <section id="home" class="flex height-fix">
+        <canvas id="canvas"></canvas>
+        <div class="flex">
+          <div class="text">
+            Hello, I'm <span class="highlight">Simon</span>
+            <br />
+            Student & Software Developer
+          </div>
+
+          <div class="button page-link" dest="about">
+            Learn More 
+              <img class="downarrow mdi" src="icons/arrow-down.png">
+          </div>
+
+          <nav class="flex">
+            <div class="link-wrap">
+              <div class="active page-link" dest="home">home</div>
+              <div class="page-link" dest="about">about</div>
+              <div class="page-link" dest="portfolio">portfolio</div>
+              <div class="page-link" dest="contact">contact</div>
+            </div>
+            <i class="mdi mdi-menu"></i>
+          </nav>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">
+            ABOUT ME
+          </div>
+          <div
+            class="header-bar waypoint"
+            data-animation="slide-in-left"
+            data-delay=".5s"
+          ></div>
+            </div>
+            <h1>Coming soon</h1>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio" class="flex">
+        <div class="header waypoint"data-animation="slide-in-right">
+          PORTFOLIO
+        </div>
+        <div
+          class="header-bar waypoint"
+          data-animation="slide-in-right"
+          data-delay=".3s"
+        ></div>
+        <h1>More coming soon</h1>
+        <div class="filter-wrap waypoint" data-animation="fade-in">
+          <div class="flex row">
+            <div class="filter" onclick="showPortfolio('Swift')">Swift</div>
+            <div class="filter" onclick="showPortfolio('Python')">Python</div>
+            <div class="filter" onclick="showPortfolio('Java')">Java</div>
+            <div class="filter" onclick="showPortfolio('Web')">Web</div>
+          </div>
+          <div class="float-bar">
+            <div class="flex row">
+              <div class="filter">Swift</div>
+              <div class="filter">Python</div>
+              <div class="filter">Java</div>
+              <div class="filter">Web</div>
+            </div>
+          </div>    
+        </div>
+
+
+        <div class="slider">
+            <div id="portfolioGallery" class="slider-wrapper flex">
+
+              
+            </div>
+            <div class="arrows">
+            <a href="#" title="Previous" class="arrow slider-link prev"></a>
+            <a href="#" title="Next" class="arrow slider-link next"></a>
+            </div>
+            </div>
+
+
+
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 100 102"
+          height="75"
+          width="100%"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svgcolor-light"
+        >
+          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">
+            CONTACT
+          </div>
+          <div
+            class="header-bar waypoint"
+            data-animation="slide-in-right"
+            data-delay=".25s"
+          ></div>
+          <div
+            class="highlight waypoint"
+            data-animation="slide-in-right"
+            data-delay=".5s"
+          >
+             Get in touch
+          </div>
+          <form
+            class="waypoint"
+            data-animation="pop-in"
+            data-delay=".5s"
+            action="php/contactForm.php"
+            method="POST"
+          >
+            <input placeholder="Name" type="text" name="name" required />
+            <input
+              placeholder="Enter email"
+              type="email"
+              name="email"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              type="text"
+              name="message"
+            ></textarea>
+            <input class="button" type="submit" id="submit" value="Send" />
+          </form>
+        </div>
+      </section>
+      <footer>
+        <div class="mdi mdi-chevron-double-up page-link" dest ="home">
+          <img src="icons/double-up-arrow.png">
+        </div>
+        <div class="icon-wrap flex row">
+          <a href="https://www.linkedin.com/in/simon-bonnedahl-b97abb218">
+            <div class="flex icon" id="icon-2">
+              <img src="icons/linkedin.png">
+            </div>
+          </a>
+          <a href="https://github.com/simon-bonnedahl">
+            <div class="flex icon" id="icon-3">
+              <img src="icons/github.png">
+            </div>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script src="scripts/canvas.js"></script>
+<script src="scripts/porfolio.js"></script>
