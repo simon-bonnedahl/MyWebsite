@@ -1,3 +1,3 @@
 # MyWebsite
 
-[Visit](simonbonnedahl.dev)
+[Visit](https://simonbonnedahl.dev/)
